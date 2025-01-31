@@ -1,8 +1,8 @@
-# CPP
+Here are the complete solutions for all 10 questions, written in standard C++ format, including `main()` functions and `return 0;` where applicable. Each program is self-contained and can be compiled and executed independently.
 
-Here are the solutions to the 10 questions based on the provided file contents:
+---
 
-### Q1: Student Class
+### **Q1: Student Class**
 ```cpp
 #include <iostream>
 #include <string>
@@ -45,9 +45,18 @@ public:
         cout << "Average Marks: " << averageMarks() << endl;
     }
 };
+
+int main() {
+    Student s;
+    s.input();
+    s.printDetails();
+    return 0;
+}
 ```
 
-### Q2: DistanceConverter Class
+---
+
+### **Q2: DistanceConverter Class**
 ```cpp
 #include <iostream>
 using namespace std;
@@ -70,9 +79,18 @@ public:
         cout << "Distance in meters: " << toMeters() << endl;
     }
 };
+
+int main() {
+    DistanceConverter d;
+    d.input();
+    d.printConverted();
+    return 0;
+}
 ```
 
-### Q3: Discount Class
+---
+
+### **Q3: Discount Class**
 ```cpp
 #include <iostream>
 using namespace std;
@@ -95,9 +113,18 @@ public:
         cout << "Final Price: " << finalPrice << endl;
     }
 };
+
+int main() {
+    Discount d;
+    d.input();
+    d.calculateFinalPrice();
+    return 0;
+}
 ```
 
-### Q4: Rectangle Class
+---
+
+### **Q4: Rectangle Class**
 ```cpp
 #include <iostream>
 using namespace std;
@@ -125,9 +152,18 @@ public:
         cout << "Perimeter: " << perimeter() << endl;
     }
 };
+
+int main() {
+    Rectangle r;
+    r.setDimensions(5.0, 3.0);
+    r.display();
+    return 0;
+}
 ```
 
-### Q5: Calculator Class
+---
+
+### **Q5: Calculator Class**
 ```cpp
 #include <iostream>
 using namespace std;
@@ -154,9 +190,19 @@ public:
         cout << "Result: " << result << endl;
     }
 };
+
+int main() {
+    Calculator calc;
+    cout << "Adding 2 integers: " << calc.add(5, 3) << endl;
+    cout << "Adding 2 doubles: " << calc.add(5.5, 3.3) << endl;
+    cout << "Adding 3 integers: " << calc.add(5, 3, 2) << endl;
+    return 0;
+}
 ```
 
-### Q6: TimeClass
+---
+
+### **Q6: TimeClass**
 ```cpp
 #include <iostream>
 using namespace std;
@@ -185,9 +231,20 @@ public:
         cout << hours << ":" << minutes << ":" << seconds << endl;
     }
 };
+
+int main() {
+    TimeClass t1, t2, result;
+    t1.input();
+    t2.input();
+    result.addTimes(t1, t2);
+    result.display();
+    return 0;
+}
 ```
 
-### Q7: countOfDigit Class
+---
+
+### **Q7: countOfDigit Class**
 ```cpp
 #include <iostream>
 using namespace std;
@@ -212,9 +269,18 @@ public:
         cout << "Number of digits: " << count << endl;
     }
 };
+
+int main() {
+    countOfDigit c;
+    c.input();
+    c.printCountOfDigit();
+    return 0;
+}
 ```
 
-### Q8: BankAccount Class
+---
+
+### **Q8: BankAccount Class**
 ```cpp
 #include <iostream>
 using namespace std;
@@ -249,9 +315,22 @@ public:
 };
 
 float BankAccount::interestRate = 0;
+
+int main() {
+    BankAccount::setInterestRate(5.0); // Set interest rate to 5%
+    BankAccount acc;
+    acc.input();
+    acc.displayDetails();
+    acc.updateBalance();
+    cout << "After updating balance with interest: " << endl;
+    acc.displayDetails();
+    return 0;
+}
 ```
 
-### Q9: Circle Class
+---
+
+### **Q9: Circle Class**
 ```cpp
 #include <iostream>
 using namespace std;
@@ -279,9 +358,18 @@ public:
         cout << "Circumference: " << circumference() << endl;
     }
 };
+
+int main() {
+    Circle c;
+    c.setRadius(7.0);
+    c.display();
+    return 0;
+}
 ```
 
-### Q10: Library Class
+---
+
+### **Q10: Library Class**
 ```cpp
 #include <iostream>
 #include <string>
@@ -328,6 +416,23 @@ public:
 };
 
 int Library::bookCount = 0;
+
+int main() {
+    Library lib;
+    lib.inputLibraryName();
+
+    Library::Book b1, b2;
+    b1.input();
+    b2.input();
+
+    lib.displayLibraryDetails();
+    b1.display();
+    b2.display();
+
+    return 0;
+}
 ```
 
-These solutions provide the implementation for each of the 10 questions as described in the files. Each class includes the necessary data members and member functions to fulfill the requirements.
+---
+
+These programs are complete and include `main()` functions for testing. Each program ends with `return 0;` to indicate successful execution. You can compile and run each program independently.
